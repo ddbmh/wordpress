@@ -366,7 +366,7 @@ function oss_setting_page() {
             </fieldset>
             <fieldset>
                 <legend>数据节点地址</legend>
-                <input type="text" name="end_point" value="<?php echo $end_point;?>" placeholder=""/>
+                <input type="text" name="end_point" value="oss-cn-hangzhou.aliyuncs.com" placeholder="oss-cn-hangzhou.aliyuncs.com"/>
                 <p>查看所有节点及地址 <a href="https://docs.aliyun.com/?spm=5176.7114037.1996646101.11.XMMlZa&pos=6#/pub/oss/product-documentation/domain-region" target="_blank">OSS数据中心地址</a></p>
             </fieldset>
             <hr>
@@ -379,17 +379,6 @@ function oss_setting_page() {
                 <legend>OSS-Http-Url</legend>
                 <input type="text" name="static_url" value="<?php echo $oss_static_url;?>" placeholder="http://"/>
                 <P>OSS Bucket 的可访问 URL，支持已绑定到 OSS 的独立域名，留空将使用本地资源</P>
-            </fieldset>
-            <hr>
-            <fieldset>
-                <legend>Aliyun-OSS 图片服务的 URL</legend>
-                <input type="text" name="img_url" value="<?php echo $oss_img_url;?>" placeholder="http://"/>
-                <dl>
-                    <dt>请瞩目：</dt>
-                    <dd>1.图片服务是可选的，留空即可不启用</dd>
-                    <dd>2.使用请先在Aliyun中设置好四种样式: <code>{'thumbnail','post-thumbnail','large','medium'}</code></dd>
-                    <dd>3.开启图片服务后，只有原图会上传到 OSS 中，缩略图不会再上传</dd>
-                </dl>
             </fieldset>
             <hr>
             <fieldset>
